@@ -22,6 +22,9 @@ export default class Header extends Component {
     this.videoReferansi = React.createRef();
 }
 
+  componentWillMount(){
+      
+  }  
   componentDidMount() {
     this.aramaMetniReferansi.current.focus();
     this.videoReferansi.current.play();
