@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Menu.css';
-
+import {Link} from 'react-router-dom';
 
 export default class Menu extends Component {
     render() {
@@ -10,7 +10,7 @@ export default class Menu extends Component {
                 <div className="menu">
                     {
                         this.props.menuButonlari.map(i => {
-                            return <button key={i.url}>{i.isim}</button>
+                            return <Link key={i.url} to={i.url}><button>{i.isim}</button></Link>
                         })
                     }
                 </div>

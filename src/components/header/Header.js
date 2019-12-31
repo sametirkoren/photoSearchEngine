@@ -3,6 +3,7 @@ import "./Header.css";
 import Logo from "../../images/search.png";
 import Menu from "../menu/Menu";
 import BackgroundVideo from '../../images/background-video.mp4';
+import {Link} from 'react-router-dom';
 export default class Header extends Component {
   constructor() {
     super();
@@ -45,7 +46,9 @@ export default class Header extends Component {
             onChange={this.aramaMetniniGuncelle}
             ref={this.aramaMetniReferansi}
           />
-          <button className="search-button">{this.state.butonIsmi}</button>
+          <Link to={{pathname:'/' , state:{aramaMetni: this.state.aramaMetni}}}>
+            <button onClick={()=> this.setState({aramaMetni:""})} className="search-button">{this.state.butonIsmi}</button>
+          </Link>
         </div>
         <video className="header-background-video" loop autoPlay="" muted ref={this.videoReferansi}>
             <source src={BackgroundVideo} type="video/mp4"/>
