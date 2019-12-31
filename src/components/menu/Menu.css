@@ -1,0 +1,13 @@
+.menu{
+    float:right;
+}
+
+button{
+    background-color : rgba(0,0,0,0);
+    color : white ;
+    border : none ; 
+    border-radius: 6px;
+    margin : 6px;
+    margin-left:0px;
+}
+button:hover{background-color: white; color : #070707;}
