@@ -2,11 +2,40 @@
     background-color : whitesmoke;
     text-align: center;
     padding : 10px;
+    height: 75vh;
 }
 
 .takvimSaat{
+    display: flex;
     font-size: 50px;
     font-weight: 700;
     color : silver;
-    margin-top:30vh;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.fotograf-alani{
+    justify-content: center;
+    display : flex ; 
+    flex-wrap : wrap;
+    width: 100%;
+    overflow-x : hidden;
+    overflow-y : auto;
+    margin-botton : 50px;
+}
+
+.poster {
+    margin : 10px;
+}
+
+.poster img {height : 200px ; width : 200px;}
+.fotograf-bilgi-alani{
+    padding : 4px;
+    width : 200px;
+    height : 40px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #f7f7f7;
 }

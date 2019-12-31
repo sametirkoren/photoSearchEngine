@@ -34,7 +34,7 @@ export default class Header extends Component {
     this.setState({ aramaMetni: e.target.value });
   }
   render() {
-    console.log(this.state.aramaMetni);
+    
     return (
       <div>
         <Menu menuButonlari={this.state.menuButonlari} />
