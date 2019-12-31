@@ -1,9 +1,14 @@
+*{
+    box-sizing: border-box;
+}
 .main{
     background-color : whitesmoke;
     text-align: center;
     padding : 10px;
-    height: 75vh;
+    height: 70vh;
+    position: relative;
 }
+
 
 .takvimSaat{
     display: flex;
@@ -14,6 +19,16 @@
     align-items: center;
     
     
+    
+}
+
+.yazi{
+    position: absolute;
+    text-align: center;
+    top : 50%;
+    left : 50%;
+    font-size : 32px;
+    transform: translate(-50%,-50%);
 }
 
 .fotograf-alani{
@@ -23,7 +38,7 @@
     width: 100%;
     overflow-x : hidden;
     overflow-y : auto;
-    margin-botton : 50px;
+    margin-bottom : 50px;
 }
 
 .poster {

@@ -92,7 +92,7 @@ export default class Main extends Component {
                         </div>
                     )
                     : (<div className="takvimSaat" >
-                        {this.state.zaman}
+                        <h1 className="yazi">{this.state.zaman}</h1>
                     </div>)
                 }
             </div>
